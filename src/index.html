@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>SwiftCargo</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <style>
+    body { font-family: 'Inter', sans-serif; }
+    .grid-bg {
+      background-image:
+        linear-gradient(rgba(255,255,255,0.07) 1px, transparent 1px),
+        linear-gradient(90deg, rgba(255,255,255,0.07) 1px, transparent 1px);
+      background-size: 70px 70px;
+    }
+  </style>
+</head>
+
+<body class="bg-[#030712] text-white">
+  <!-- NAVBAR -->
+  <nav class="flex h-[67px] items-center justify-between border-b border-white/10 px-8">
+    <div class="flex items-center gap-3">
+      <div class="flex h-10 w-10 items-center justify-center rounded-xl bg-blue-500">S</div>
+      <span class="text-xl font-bold">SwiftCargo</span>
+    </div>
+
+    <ul class="hidden gap-8 text-[15px] font-medium text-gray-200 md:flex">
+      <li>Services</li>
+      <li>Why Us</li>
+      <li>Calculator</li>
+      <li>Testimonials</li>
+      <li>Contact</li>
+    </ul>
+
+    <div class="flex items-center gap-6 text-[15px] text-gray-200">
+      <span>☀</span>
+      <span class="hidden lg:block">1-800-SWIFT-GO</span>
+      <button class="rounded-full bg-amber-500 px-5 py-2.5 font-semibold text-white hover:bg-amber-300 shadow-lg shadow-amber-500/30">
+        Get a Quote
+      </button>
+    </div>
+  </nav>
+
+  <!-- HERO -->
+  <section class="grid-bg bg-gradient-to-br from-[#526599] via-[#24315e] to-[#1f1b1c]">
+    <div class="mx-auto grid max-w-[1284px] gap-[76px] px-8 pb-24 pt-32 lg:grid-cols-2">
+
+      <!-- LEFT -->
+      <div>
+        <span class="mb-[17px] inline-flex items-center gap-2 rounded-full border border-blue-400/30 bg-blue-500/10 px-4 py-2 text-sm text-blue-300">
+          <span class="h-2 w-2 rounded-full bg-amber-500"></span>
+          Trusted by 10,000+ Businesses
+        </span>
+
+        <h1 class="text-4xl font-bold leading-tight tracking-tight text-white sm:text-5xl lg:text-6xl">
+          Ship
+          <span class="bg-gradient-to-r from-blue-500 via-gray-400 to-amber-500 bg-clip-text text-transparent">Anywhere</span>,
+          <br />Anytime
+        </h1>
+
+        <p class="mt-8 max-w-xl text-xl text-gray-300">
+          Fast, reliable shipping and logistics services worldwide. From freight forwarding to last-mile delivery, we move your business forward.
+        </p>
+
+        <div class="mt-12 flex gap-4">
+          <button class="rounded-full bg-amber-500 px-8 py-4 text-[15px] font-semibold text-white shadow-xl shadow-amber-500/30 hover:bg-amber-200">
+            Get Instant Quote →
+          </button>
+          <button class="rounded-full border border-white/20 bg-white/10 px-8 py-4 text-[15px] font-semibold">
+            Explore Services
+          </button>
+        </div>
+
+        <div class="mt-12 flex flex-wrap items-center gap-6 text-[17px] text-gray-400">
+          <span>Free Tracking</span>
+          <span>Insured Shipments</span>
+          <span>24/7 Support</span>
+        </div>
+      </div>
+
+      <!-- RIGHT: TRACK CARD -->
+      <div class="relative mt-[75px]">
+        <div class="rounded-3xl border border-white/10 bg-white/5 p-8 shadow-2xl backdrop-blur-xl">
+          <h2 class="text-xl font-semibold">Track Your Shipment</h2>
+          <p class="mt-2 text-[15px] text-gray-400">Enter your tracking number to get real-time updates</p>
+
+          <input
+            type="text"
+            placeholder="Enter tracking number (e.g., SC123456789)"
+            class="mt-8 h-14 w-full rounded-xl border border-white/10 bg-white/10 px-4 text-white placeholder-gray-500 outline-none"
+          />
+
+          <button class="mt-4 h-14 w-full rounded-xl bg-blue-500 font-semibold shadow-lg shadow-blue-500/30">
+            Track Package
+          </button>
+
+          <div class="mt-6 flex justify-center gap-6 border-t border-white/10 pt-6 text-[13px] text-gray-400">
+            <span>Air</span>
+            <span>Ground</span>
+            <span>Ocean</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS -->
+  <section class="grid-bg bg-gradient-to-br from-[#526599] via-[#24315e] to-[#1f1b1c]">
+    <div class="mx-auto grid max-w-[1284px] grid-cols-2 gap-8 px-8 pb-28 pt-10 text-center md:grid-cols-4">
+      <div>
+        <p class="text-3xl text-white lg:text-4xl font-bold">50M+</p>
+        <p class="mt-1 text-sm text-gray-400">Packages Delivered</p>
+      </div>
+      <div>
+        <p class="text-3xl  text-white lg:text-4xl font-bold">150+</p>
+        <p class="mt-1 text-sm text-gray-400">Countries Served</p>
+      </div>
+      <div>
+        <p class="text-3xl text-white lg:text-4xl font-bold">98.5%</p>
+        <p class="mt-1 text-sm text-gray-400">On-Time Rate</p>
+      </div>
+      <div>
+        <p class="text-3xl text-white lg:text-4xl font-bold">24/7</p>
+        <p class="mt-1 text-sm text-gray-400">Support Available</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- TRUSTED BY -->
+  <section class="border-t border-white/10 bg-[#030712] px-8 py-10 text-center">
+    <p class="text-sm uppercase tracking-wide text-gray-400">Trusted by leading companies worldwide</p>
+    <div class="mt-8 flex flex-wrap justify-center gap-x-14 gap-y-4 text-lg font-semibold text-gray-500">
+      <span>TechFlow Inc.</span>
+      <span>Global Retail Co.</span>
+      <span>MedSupply Direct</span>
+      <span>AutoParts Express</span>
+      <span>FreshFoods International</span>
+    </div>
+  </section>
+  <!-- OUR SERVICES -->
+  <section class="border-t border-white/10 bg-[#030712] px-8 py-28 text-center">
+    <span class="inline-block rounded-full border border-blue-500/40 bg-blue-500/10 px-4 py-2 text-sm font-semibold text-blue-300">
+      Our Services
+    </span>
+    <h2 class="mt-5 text-5xl font-bold">Complete Logistics
+      <span class="bg-gradient-to-r from-blue-500 via-gray-400 to-amber-500 bg-clip-text text-transparent">Solutions</span>
+    </h2>
+    <p class="mx-auto mt-4 max-w-2xl text-lg text-gray-400">
+      From air freight to last-mile delivery, we offer end-to-end shipping services tailored to your business needs.
+    </p>
+  </section>
+</body>
+</html>
